@@ -16,3 +16,5 @@ mkdir -p ~/.config/nvim
 
 # xinit
 [ ! -f ~/.xinitrc ] && ln -s $DIR/xinitrc ~/.xinitrc
+
+exit 0

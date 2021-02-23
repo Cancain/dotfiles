@@ -5,7 +5,7 @@ REPO="Cancain/dotfiles"
 USERNAME="tomeri"
 
 # Exit on error
-set -e
+set -ex
 
 # Success/error message on exit
 done=0
@@ -62,10 +62,6 @@ pacman --noconfirm --needed -qSy \
   xorg \
   xorg-xinit
 
-if ! which ttp; then
-  npm install -g toggle-touchpad
-fi
-
 # Groups
 usermod -a -G docker $USERNAME
 usermod -a -G video $USERNAME
@@ -79,8 +75,6 @@ pacman --noconfirm --needed -qSy neovim
 # (Auto)start network stuff
 systemctl enable NetworkManager
 systemctl restart NetworkManager
-systemctl enable ModemManager
-systemctl restart ModemManager
 
 # Wait for network
 while ! curl http://example.com --connect-timeout 5 > /dev/null; do
@@ -104,32 +98,18 @@ if ! which yay; then
 fi
 
 # AUR packages
-sudo -u $USERNAME yay -Sy --noconfirm \
-  ttf-ms-fonts \
-  fish \
-  starship-bin \
-  nerd-fonts-complete
+#sudo -u $USERNAME yay -Sy --noconfirm ttf-ms-fonts fish nerd-fonts-complete starship-bin
 
 # shell
 chsh -s /usr/bin/fish $USERNAME
 
 # Set locale
-if ! (localectl list-locales | grep en_US.utf8); then
+if ! (localectl list-locales | grep en_US.UTF-8); then
   echo "LANG=en_US.UTF-8" > /etc/locale.conf
   echo "LC_ALL=en_US.UTF-8" >> /etc/locale.conf
   echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
   locale-gen
 fi
-
-# Full system upgrade
-pacman --noconfirm -qSyu
-env SUDO_USER="$USERNAME" yay --noconfirm -Ayu
-
-# Don't clear tty after boot
-mkdir -p /etc/systemd/system/getty@tty1.service.d/
-NOCLEARPATH="/etc/systemd/system/getty@tty1.service.d/noclear.conf"
-echo "[Service]" > "$NOCLEARPATH"
-echo "TTYVTDisallocate=no" >> "$NOCLEARPATH"
 
 # Keymap/font in tty
 echo "KEYMAP=sv-latin1" > /etc/vconsole.conf
