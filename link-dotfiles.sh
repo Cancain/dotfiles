@@ -2,9 +2,12 @@
 
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 
-# i3
-mkdir -p ~/.i3
-[ ! -f ~/.i3/config ] && ln -s $DIR/i3 ~/.i3/config
+# terminator
+mkdir -p ~/.config/terminator
+[ ! -f ~/.config/terminator/config ] && ln -s $DIR/terminator ~/.config/terminator/config
+
+# vscode
+[ ! -f ~/.config/Code/User/settings.json ] && ln -s $DIR/settings.json ~/.config/Code/User/settings.json
 
 # neovim
 mkdir -p ~/.config/nvim

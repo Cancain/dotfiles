@@ -80,7 +80,7 @@ bindsym $mod+a focus parent
 focus_follows_mouse yes
 
 # autostart apps
-exec compton
+exec picom
 exec feh --bg-scale /home/dowie/.bg.jpg
 
 # Define names for default workspaces for which we configure key bindings later on.

@@ -6,9 +6,11 @@
   [[default]]
     background_color = "#002b36"
     cursor_color = "#aaaaaa"
+    font = Monospace Bold 13
     foreground_color = "#839496"
     show_titlebar = False
     scrollbar_position = hidden
+    use_system_font = False
 [layouts]
   [[default]]
     [[[window0]]]
