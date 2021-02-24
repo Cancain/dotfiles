@@ -11,6 +11,8 @@ alias native="cd /home/tomeri/connect/native"
 alias web="cd /home/tomeri/connect/web"
 alias scr="./scripts/screens.sh"
 alias kdiscord="pkill -9 -f discord"
-alias webs="cd /home/tomeri/repos/connect/web && yarn start"
-alias natives="cd /home/tomeri/repos/connect/native && yarn start"
-alias ra="cd /home/tomeri/repos/connect/native && yarn ra"
+alias webs="cd /home/tomeri/connect/web && yarn start"
+alias natives="cd /home/tomeri/connect/native && yarn start"
+alias ra="cd /home/tomeri/connect/native && yarn ra"
+
+export EDITOR=nvim
