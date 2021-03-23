@@ -82,6 +82,7 @@ focus_follows_mouse yes
 # autostart apps
 exec picom
 exec feh --bg-scale /home/dowie/.bg.jpg
+exec setxkbmap se
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
