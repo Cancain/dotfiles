@@ -14,5 +14,8 @@ alias kdiscord="pkill -9 -f discord"
 alias webs="cd /home/tomeri/connect/web && yarn start"
 alias natives="cd /home/tomeri/connect/native && yarn start"
 alias ra="cd /home/tomeri/connect/native && yarn ra"
+alias codecon="code /home/tomeri/connect"
+alias todo="/home/tomeri/todoist/todoist"
 
 export EDITOR=nvim
+
