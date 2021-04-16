@@ -18,6 +18,8 @@ alias ra="cd /home/tomeri/connect/native && yarn ra"
 alias codecon="code /home/tomeri/connect"
 alias coden="code /home/tomeri/connect/native"
 alias codew="code /home/tomeri/connect/web"
+alias codef="code /home/tomeri/connect/functions"
+alias codet="code /home/tomeri/connect/firestore"
 alias todo="/home/tomeri/todoist/todoist"
 alias rmerged="/home/tomeri/Scripts/rmerged"
 
