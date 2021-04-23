@@ -23,6 +23,8 @@ alias codet="code /home/tomeri/connect/firestore"
 alias todo="/home/tomeri/todoist/todoist"
 alias rmerged="./home/tomeri/Scripts/rmerged"
 alias cam="sudo simple_droidcam_client"
+alias pophome='pop "pop://join?roomId=769-767-277"'
+alias addall="git add --a"
 
 export EDITOR=nvim
 
