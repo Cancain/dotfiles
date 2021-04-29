@@ -25,6 +25,7 @@ alias rmerged="./home/tomeri/Scripts/rmerged"
 alias cam="sudo simple_droidcam_client"
 alias pophome='pop "pop://join?roomId=769-767-277"'
 alias addall="git add --a"
+alias constants="nvim /home/tomeri/connect/shared/constants.ts"
 
 export EDITOR=nvim
-
+export RIPGREP_CONFIG_PATH=$HOME/.rgrc

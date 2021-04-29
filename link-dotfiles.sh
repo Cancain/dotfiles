@@ -27,4 +27,6 @@ mkdir -p ~/.config/terminator
 mkdir -p ~/.config/fish
 [ ! -f ~/.config/fish/config.fish ] && ln -s $DIR/config.fish ~/.config/fish/config.fish
 
+[ ! -f ~/.rgrc ] && ln -s $DIR/rgrc ~/.rgrc
+
 exit 0
