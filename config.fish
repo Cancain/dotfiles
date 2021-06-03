@@ -19,7 +19,7 @@ alias codecon="code /home/tomeri/connect"
 alias coden="code /home/tomeri/connect/native"
 alias codew="code /home/tomeri/connect/web"
 alias codef="code /home/tomeri/connect/functions"
-alias codet="code /home/tomeri/connect/firestore"
+alias coder="code /home/tomeri/connect/firestore"
 alias todo="/home/tomeri/todoist/todoist"
 alias rmerged="./home/tomeri/Scripts/rmerged"
 alias cam="sudo simple_droidcam_client"
@@ -27,6 +27,7 @@ alias pophome='pop "pop://join?roomId=769-767-277"'
 alias addall="git add --a"
 alias constants="nvim /home/tomeri/connect/shared/constants.ts"
 alias colors="cat /home/tomeri/connect/shared/constants.ts"
+alias discord="~/Discord/Discord"
 
 export EDITOR=nvim
 export RIPGREP_CONFIG_PATH=$HOME/.rgrc
