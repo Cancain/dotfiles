@@ -83,6 +83,8 @@ focus_follows_mouse yes
 exec picom
 exec feh --bg-scale /home/dowie/.bg.jpg
 exec setxkbmap se
+exec blueman-applet
+#exec ~/Scripts/screens.sh
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -197,3 +199,4 @@ bindsym $mod+m bar mode toggle
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
   client.background       #2B2C2B
+
