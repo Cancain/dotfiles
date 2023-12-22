@@ -80,10 +80,12 @@ bindsym $mod+l exec i3lock
 focus_follows_mouse yes
 
 # autostart apps
+exec --no-startup-id picom --config ~/.config/picom.conf
 exec picom
 exec feh --bg-scale /home/dowie/.bg.jpg
 exec setxkbmap se
 exec blueman-applet
+exec setxkbmap se
 #exec ~/Scripts/screens.sh
 
 # Define names for default workspaces for which we configure key bindings later on.
@@ -190,13 +192,16 @@ bar {
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
-
 # class                   border  backgr. text    indic.   child_border
   client.focused          #556064 #556064 #80FFF9 #FDF6E3
   client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
   client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+  client.placeholder      #000000 #0c0c0c #ffffff #000000
 
   client.background       #2B2C2B
 
+default_border pixel 4
+
+gaps inner 4
+gaps outer 2
