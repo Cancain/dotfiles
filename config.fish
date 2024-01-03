@@ -7,10 +7,18 @@ end
 
 function fish_prompt
     set_color green
-    echo -n (pwd)  \n
+    echo -n (pwd)
+    set_color yellow
+
+    if test (git symbolic-ref --short HEAD 2> /dev/null)
+        set_color blue
+        echo -n " "
+        set_color yellow --bold
+        git symbolic-ref --short HEAD 2> /dev/null
+    end
     set_color blue
-    echo ' > '
-end
+    echo -n ' > '
+end | string replace -r '\n$' ''
 
 source ~/.config/fish/fish_aliases
 
