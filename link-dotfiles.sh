@@ -24,9 +24,15 @@ mkdir -p ~/.config/terminator
 # xinit
 [ ! -f ~/.xinitrc ] && ln -s $DIR/xinitrc ~/.xinitrc
 
+# fish
 mkdir -p ~/.config/fish
 [ ! -f ~/.config/fish/config.fish ] && ln -s $DIR/config.fish ~/.config/fish/config.fish
+[ ! -f ~/.config/fish/fish_aliases ] && ln -s $DIR/config.fish ~/.config/fish/fish_aliases
 
+#rg
 [ ! -f ~/.rgrc ] && ln -s $DIR/rgrc ~/.rgrc
+
+#picom
+[ ! -f ~/.config ] && ln -s $DIR/picom.conf ~/.config/picom.conf
 
 exit 0
