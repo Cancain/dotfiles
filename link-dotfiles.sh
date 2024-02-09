@@ -33,6 +33,10 @@ mkdir -p ~/.config/fish
 [ ! -f ~/.rgrc ] && ln -s $DIR/rgrc ~/.rgrc
 
 #picom
-[ ! -f ~/.config ] && ln -s $DIR/picom.conf ~/.config/picom.conf
+[ ! -f ~/.config/picom.conf ] && ln -s $DIR/picom.conf ~/.config/picom.conf
+
+#alacritty
+mkdir -p ~/.config/alacritty
+[ ! -f ~/.config/alacritty/alacritty.toml ] && ln -s $DIR/dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 exit 0
