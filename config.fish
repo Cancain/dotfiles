@@ -27,6 +27,6 @@ set --export ANDROID_HOME /opt/android-sdk/
 set -gx PATH ~/.cargo/bin $PATH
 set -gx PATH ~/.bun/bin $PATH
 
-export EDITOR=nvim
+export EDITOR=helix
 export REACT_EDITOR=nvim
 export RIPGREP_CONFIG_PATH=$HOME/.rgrc
