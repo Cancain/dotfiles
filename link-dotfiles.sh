@@ -4,39 +4,39 @@ DIR="$( cd "$( dirname "$0" )" && pwd )"
 
 # terminator
 mkdir -p ~/.config/terminator
-[ ! -f ~/.config/terminator/config ] && ln -s $DIR/terminator ~/.config/terminator/config
+ln -sf $DIR/terminator ~/.config/terminator/config
 
 # vscode
-[ ! -f ~/.config/Code/User/settings.json ] && ln -s $DIR/settings.json ~/.config/Code/User/settings.json
+# ln -sf $DIR/settings.json ~/.config/Code/User/settings.json
 
 # neovim
 mkdir -p ~/.config/nvim
-[ ! -f ~/.config/nvim/init.vim ] && ln -s $DIR/init.vim ~/.config/nvim/init.vim
-[ ! -f ~/.vimrc ] && ln -s $DIR/init.vim ~/.vimrc
+ln -sf $DIR/init.vim ~/.config/nvim/init.vim
+ln -sf $DIR/init.vim ~/.vimrc
 
 # terminator
 mkdir -p ~/.config/terminator
-[ ! -f ~/.config/terminator/config ] && ln -s $DIR/terminator ~/.config/terminator/config
+ln -sf $DIR/terminator ~/.config/terminator/config
 
 # rg
-[ ! -f ~/.rgrc ] && ln -s $DIR/rgrc ~/.rgrc
+ln -sf $DIR/rgrc ~/.rgrc
 
 # xinit
-[ ! -f ~/.xinitrc ] && ln -s $DIR/xinitrc ~/.xinitrc
+ln -sf $DIR/xinitrc ~/.xinitrc
 
 # fish
 mkdir -p ~/.config/fish
-[ ! -f ~/.config/fish/config.fish ] && ln -s $DIR/config.fish ~/.config/fish/config.fish
-[ ! -f ~/.config/fish/fish_aliases ] && ln -s $DIR/config.fish ~/.config/fish/fish_aliases
+ln -sf $DIR/config.fish ~/.config/fish/config.fish
+ln -sf $DIR/config.fish ~/.config/fish/fish_aliases
 
-#rg
-[ ! -f ~/.rgrc ] && ln -s $DIR/rgrc ~/.rgrc
+# rg
+ln -sf $DIR/rgrc ~/.rgrc
 
-#picom
-[ ! -f ~/.config/picom.conf ] && ln -s $DIR/picom.conf ~/.config/picom.conf
+# picom
+ln -sf $DIR/picom.conf ~/.config/picom.conf
 
-#alacritty
+# alacritty
 mkdir -p ~/.config/alacritty
-[ ! -f ~/.config/alacritty/alacritty.toml ] && ln -s $DIR/dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
+ln -sf $DIR/dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 exit 0
