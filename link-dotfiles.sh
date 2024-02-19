@@ -27,7 +27,7 @@ ln -sf $DIR/xinitrc ~/.xinitrc
 # fish
 mkdir -p ~/.config/fish
 ln -sf $DIR/config.fish ~/.config/fish/config.fish
-ln -sf $DIR/config.fish ~/.config/fish/fish_aliases
+ln -sf $DIR/fish_aliases ~/.config/fish/fish_aliases
 
 # rg
 ln -sf $DIR/rgrc ~/.rgrc
