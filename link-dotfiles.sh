@@ -7,10 +7,6 @@ mkdir -p ~/.config/nvim
 ln -sf $DIR/init.vim ~/.config/nvim/init.vim
 ln -sf $DIR/init.vim ~/.vimrc
 
-# terminator
-mkdir -p ~/.config/terminator
-ln -sf $DIR/terminator ~/.config/terminator/config
-
 # rg
 ln -sf $DIR/rgrc ~/.rgrc
 
