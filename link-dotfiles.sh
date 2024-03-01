@@ -2,13 +2,6 @@
 
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 
-# terminator
-mkdir -p ~/.config/terminator
-ln -sf $DIR/terminator ~/.config/terminator/config
-
-# vscode
-# ln -sf $DIR/settings.json ~/.config/Code/User/settings.json
-
 # neovim
 mkdir -p ~/.config/nvim
 ln -sf $DIR/init.vim ~/.config/nvim/init.vim
@@ -37,6 +30,6 @@ ln -sf $DIR/picom.conf ~/.config/picom.conf
 
 # alacritty
 mkdir -p ~/.config/alacritty
-ln -sf $DIR/dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
+ln -sf $DIR/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 exit 0
