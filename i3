@@ -74,15 +74,15 @@ bindsym $mod+a focus parent
 bindsym $mod+l exec i3lock
 
 # focus the child container
-#bindsym $mod+d focus child
+#bindsym $mod+t focus child
 
 # Focus doesn't follow mouse
-focus_follows_mouse yes
+focus_follows_mouse no
 
 # autostart apps
 exec --no-startup-id picom --config ~/.config/picom.conf
 exec picom
-exec feh --bg-scale /home/dowie/.bg.jpg
+exec feh --bg-scale ~/.bg.jpg
 exec setxkbmap se
 exec blueman-applet
 exec setxkbmap se
@@ -160,11 +160,8 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-# Colours
-#TODO make solarized theme
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# Colours
 bar {
         status_command i3status
         i3bar_command i3bar
