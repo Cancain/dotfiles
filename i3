@@ -77,7 +77,7 @@ bindsym $mod+l exec i3lock
 #bindsym $mod+t focus child
 
 # Focus doesn't follow mouse
-focus_follows_mouse no
+focus_follows_mouse yes
 
 # autostart apps
 exec --no-startup-id picom --config ~/.config/picom.conf
