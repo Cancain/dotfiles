@@ -200,5 +200,6 @@ bindsym $mod+m bar mode toggle
 
 default_border pixel 4
 
+# gaps
 gaps inner 4
 gaps outer 2
