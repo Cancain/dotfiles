@@ -203,3 +203,5 @@ default_border pixel 4
 # gaps
 gaps inner 4
 gaps outer 2
+
+bindsym $mod+Shift+Return exec alacritty --working-directory $(fpwd ~)
