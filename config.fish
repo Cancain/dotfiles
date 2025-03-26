@@ -2,7 +2,7 @@ set -gx PATH ~/bin $PATH
 set -gx ANDROID_SDK_ROOT /opt/android-sdk
 
 if test -z "$SSH_AGENT_PID"
-  eval (ssh-agent -c)
+    eval (ssh-agent -c)
 end
 
 function fish_prompt
@@ -14,7 +14,7 @@ function fish_prompt
         set_color blue
         echo -n " "
         set_color yellow --bold
-        git symbolic-ref --short HEAD 2> /dev/null
+        git symbolic-ref --short HEAD 2>/dev/null
     end
     set_color blue
     echo -n ' > '
@@ -30,3 +30,4 @@ set -gx PATH ~/.bun/bin $PATH
 export EDITOR=helix
 export REACT_EDITOR=nvim
 export RIPGREP_CONFIG_PATH=$HOME/.rgrc
+export XDG_DATA_DIRS=/usr/share:/usr/local/share
