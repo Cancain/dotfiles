@@ -12,7 +12,7 @@ alias ra="cd /home/tomeri/connect/native && yarn android"
 alias todo="/home/tomeri/todoist/todoist"
 alias pophome='pop "pop://join?roomId=769-767-277"'
 alias addall="git add --a"
-alias rmerged="git branch --merged | egrep -v '(^\*|master|main|dev)' | xargs git branch -d"
+alias rmerged="git branch --merged | rg -v '(^\*|master|main|dev)' | xargs git branch -d"
 alias att="~/fixkod/scripts/all-the-things"
 alias lintall="~/fixkod/scripts/eslint-all"
 alias lall="~/fixkod/scripts/eslint-all"
