@@ -27,3 +27,5 @@ alias nvim="echo No, Michael! No No, Michael, That Was So Not Right...\n open wi
 alias fk="cd ~/fixkod"
 alias cu="env XDG_DATA_DIRS=/usr/share:/usr/local/share cursor"
 alias bd="fk && bun dev"
+alias emcc="~/repos/emsdk/upstream/emscripten/emcc" 
+alias hp="cd ~/repos/healthpack"

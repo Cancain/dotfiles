@@ -22,7 +22,7 @@ end | string replace -r '\n$' ''
 
 source ~/.config/fish/fish_aliases
 
-set --export JAVA_HOME /usr/lib/jvm/java-11-openjdk/
+set --export JAVA_HOME /usr/lib/jvm/java-17-openjdk
 set --export ANDROID_HOME /opt/android-sdk/
 set -gx PATH ~/.cargo/bin $PATH
 set -gx PATH ~/.bun/bin $PATH
