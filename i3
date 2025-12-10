@@ -86,6 +86,7 @@ exec feh --bg-scale ~/.bg.jpg
 exec setxkbmap se
 exec blueman-applet
 exec setxkbmap se
+exec redshift -l 60.6749:17.1413
 #exec ~/Scripts/screens.sh
 
 # Define names for default workspaces for which we configure key bindings later on.
